@@ -9,7 +9,7 @@ import org.openqa.selenium.By;
 
 	public class Myfirstselenium {
 		
-		public static void main (String[] args) {
+		public static void main (String[] args) throws InterruptedException {
 			WebDriver driver = new ChromeDriver();
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 			
@@ -41,6 +41,8 @@ import org.openqa.selenium.By;
 			emailele.sendKeys("tom.smith@hotmail.com");
 			WebElement passwordele=driver.findElement(By.xpath("//input[@id='password']"));
 			passwordele.sendKeys("Tomsmi@1235");
+			
+			Thread.sleep(3000);
 			WebElement submitele=driver.findElement(By.xpath("//div/button[@data-test='register-submit']"));
 			submitele.click();
 			
