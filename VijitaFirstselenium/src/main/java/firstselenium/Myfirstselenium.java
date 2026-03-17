@@ -1,18 +1,22 @@
 package firstselenium;
 
-	import org.openqa.selenium.By;
+	import java.time.Duration;
+
+import org.openqa.selenium.By;
 	import org.openqa.selenium.WebDriver;
 	import org.openqa.selenium.WebElement;
 	import org.openqa.selenium.chrome.ChromeDriver;
 
 	public class Myfirstselenium {
 		
-		public static void main (String[] args) throws InterruptedException {
+		public static void main (String[] args) {
 			WebDriver driver = new ChromeDriver();
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+			
 			driver.get("https://with-bugs.practicesoftwaretesting.com/#/");
 			WebElement signinele=driver.findElement(By.xpath("//a[text()='Sign in']"));
 			signinele.click();
-			Thread.sleep(3000);
+	
 			WebElement registerele=driver.findElement(By.xpath("//a[text()='Register your account']"));
 			registerele.click();
 			WebElement firstnameele=driver.findElement(By.xpath("//input[@id='first_name']"));
@@ -37,7 +41,6 @@ package firstselenium;
 			emailele.sendKeys("tom.smith@hotmail.com");
 			WebElement passwordele=driver.findElement(By.xpath("//input[@id='password']"));
 			passwordele.sendKeys("Tomsmi@1235");
-			Thread.sleep(3000);
 			WebElement submitele=driver.findElement(By.xpath("//div/button[@data-test='register-submit']"));
 			submitele.click();
 			
