@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="verifytest.BrowserNavigation">
+      <class name="verifytest.DropDown">
         <methods>
-          <include name="testbrowsernavi"/>
+          <include name="dropdowntest"/>
         </methods>
-      </class> <!-- verifytest.BrowserNavigation -->
+      </class> <!-- verifytest.DropDown -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
