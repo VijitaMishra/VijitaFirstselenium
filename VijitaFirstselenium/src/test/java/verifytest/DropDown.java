@@ -30,7 +30,8 @@ public class DropDown {
 		
 		Select dd = new Select(dropDownele);
 		dd.selectByContainsVisibleText("Option 2");
-		
+		dd.selectByIndex(1);
+		dd.selectByValue("1");
 		
 	}
 

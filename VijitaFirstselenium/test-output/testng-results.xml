@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-02T13:10:28 GMT-04:00" name="Default suite" finished-at="2026-04-02T13:10:35 GMT-04:00" duration-ms="7012">
+  <suite started-at="2026-04-02T14:16:10 GMT-04:00" name="Default suite" finished-at="2026-04-02T14:16:20 GMT-04:00" duration-ms="10881">
     <groups>
     </groups>
-    <test started-at="2026-04-02T13:10:28 GMT-04:00" name="Default test" finished-at="2026-04-02T13:10:35 GMT-04:00" duration-ms="7012">
-      <class name="verifytest.DropDown">
-        <test-method signature="dropdowntest()[pri:0, instance:verifytest.DropDown@5b8dfcc1]" started-at="2026-04-02T13:10:28 GMT-04:00" name="dropdowntest" finished-at="2026-04-02T13:10:35 GMT-04:00" duration-ms="6965" status="PASS">
+    <test started-at="2026-04-02T14:16:10 GMT-04:00" name="Default test" finished-at="2026-04-02T14:16:20 GMT-04:00" duration-ms="10881">
+      <class name="firsttest.TestAssignment">
+        <test-method signature="testfirstassignment()[pri:0, instance:firsttest.TestAssignment@5b8dfcc1]" started-at="2026-04-02T14:16:10 GMT-04:00" name="testfirstassignment" finished-at="2026-04-02T14:16:20 GMT-04:00" duration-ms="10839" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dropdowntest -->
-      </class> <!-- verifytest.DropDown -->
+        </test-method> <!-- testfirstassignment -->
+      </class> <!-- firsttest.TestAssignment -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
